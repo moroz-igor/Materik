@@ -1,0 +1,100 @@
+._materik-header{
+    background-image: url(../img/header/m1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    height: 30em;
+    h2{
+        font-size: 50px;
+        color: silver;
+        margin: auto;
+        text-align: center;
+    }
+}
+$fontSize: 10rem;
+
+._text-title {
+  height: 10vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+  margin-top: -100px;
+}
+
+// div {
+//   will-change: transform;
+// }
+
+#ui {
+  transform-style: preserve-3d;
+  .text {
+      @media only screen and(max-width: 750px){
+          font-size: 5rem;
+          line-height: 5rem;
+        }
+
+        position: absolute;
+        font-size: $fontSize;
+        color: #fff;
+        line-height: $fontSize;
+        font-family: 'Anton', sans-serif;
+        padding: 20px 0;
+        mix-blend-mode: screen;
+        transform-style: preserve-3d;
+        @for $i from 1 through 26 {
+            $key: $i - 1;
+            $param: 5;
+            &:nth-child(#{$i}) {
+                clip-path: polygon(
+                -30% + ($key * $param) 0,
+                -20% + ($key * $param) 0,
+                20% + ($key * $param) 100%,
+                0% + ($key * $param) 100%
+                );
+                animation: wave 2000ms $key * 200 - 10000ms ease-in-out infinite alternate;
+            }
+    }
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
+    color: rgba(0, 30, 100, 1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    color: rgba(192,192,192, 1);
+  }
+}
+
+
+
+
+.title {
+    font-family: "Montserrat";
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    letter-spacing: 1px;
+}
+
+h1 {
+    padding-top: 2em;
+    text-align: center;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: .75;
+    margin: 0;
+}

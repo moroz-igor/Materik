@@ -1,0 +1,21 @@
+body, div, p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: radial-gradient(circle farthest-corner at 100px 50px, silver, black);
+    //background-color: black
+}
+main{
+    max-width: 1680px;
+    margin: 0 auto;
+}
+._midl{
+    text-align: center !important;
+}
+._center{
+    margin: 0 auto !important;
+}
+._op{
+    opacity: 0.9;
+}

@@ -1,0 +1,16 @@
+include head/head
+include header/header
+include content/content
+include about/about
+include slider/slider
+include footer/footer
+
+doctype html
+html(lang="zxx")
+    head
+        +head("Vinnytsia - Rock", "main")
+    body
+        +content
+        script( src="https://code.jquery.com/jquery-3.1.1.min.js")
+        script(src ="js/bootstrap.js")    
+        script(src ="js/main.js")    

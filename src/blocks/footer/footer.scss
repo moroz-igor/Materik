@@ -1,0 +1,26 @@
+._footer{
+    background-image: url(../img/footer/music-man.jpg);
+    opacity: 0.2;
+    height: 200px;
+    text-align: center;
+    h2{
+        text-align: center;
+        margin-top: 0;
+        padding-top: 1em;
+        font-size: 60px;
+        font-family: 'Lora';
+    }
+}
+._develop{
+    background-image: url(../img/footer/38559.jpg);
+    p{
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-right: 2em;
+        color: silver;
+        font-family: 'Lora';
+        font-style: italic;
+        text-align: right;
+        font-size: 10px;
+    }
+}

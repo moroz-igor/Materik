@@ -1,0 +1,33 @@
+._about{
+    background-image: url(../img/materik/materik10.jpg);
+    background-size: cover;
+
+    h2{
+        text-align: center;
+        margin-top: 1em;
+        font-family: "Lora";
+        font-size: 60px;
+        color: silver;
+        font-style: italic;
+        margin-top: 0;
+    }
+}
+._about-img-blok{
+    margin: 2%;
+    color: white;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+._about-content-block{
+    color: silver;
+    font-family: "Lora";
+    font-size: 20px;
+}
+._track{
+    audio{
+        margin-top: -2em;
+        margin-left: 2em;
+    }
+}

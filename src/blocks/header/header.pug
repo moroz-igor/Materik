@@ -1,0 +1,13 @@
+mixin header
+    header 
+        ._materik-header
+            ._title
+                h1 То Є
+                    br
+                    |Roсk
+            h2 Our rock band
+        ._text-title    
+            - var $text = "МАТЕРИК"
+            #ui
+              - for (i = 0; i < 26; i++)
+                .text #{$text}
